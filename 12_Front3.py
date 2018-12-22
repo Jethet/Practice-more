@@ -2,6 +2,7 @@
 # than 3, front is whatever is there. Return new string which is
 # 3 copies of the front.
 
+
 def front3(str):
     if len(str) > 3:
         str = str[0:3] * 3
