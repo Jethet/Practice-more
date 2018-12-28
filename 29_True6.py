@@ -2,8 +2,8 @@
 # or the last element in the array.
 
 def first_last6(nums):
-    if nums[0] or nums[-1] == 6:
-        return True
+    return (nums[0] == 6 or nums[-1] == 6)
+
 
 print(first_last6([1, 2, 6]))
 print(first_last6([6, 1, 2, 3]))
