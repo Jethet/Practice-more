@@ -16,3 +16,4 @@ def six(a, b):
 print(six(6, 4))
 print(six(4, 5))
 print(six(1, 5))
+print(six(7, 2))
