@@ -19,4 +19,3 @@ def date(you, date):
 
 print(date(5, 10))
 print(date(5, 2))
-print(date(5, 5))
