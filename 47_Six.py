@@ -2,15 +2,15 @@
 # their sum or difference is 6 (the function abs(num) computes absolute value)
 
 def six(a, b):
-    if abs(a) == 6:
+    if a == 6:
         return True
-    elif abs(b) == 6:
+    elif b == 6:
         return True
-    elif abs(a + b) == 6:
+    elif a + b == 6:
         return True
-    elif abs(a - b) == 6:
+    elif a - b == 6:
         return True
-    elif abs(b - a) == 6:
+    elif b - a == 6:
         return True
     else:
         return False
