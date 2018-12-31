@@ -7,11 +7,18 @@
 # level as round_sum().
 
 def round_sum(a, b, c):
-
+    a = round19(a)
+    b = round19(b)
+    c = round19(c)
+    return a + b + c
 
 def round19(num):
-    if digit >= 5:
-        digit
+    if num % 10 == 0:
+        return num
+    elif num % 10 >= 5:
+        return 10 - (num % 10) + num
+    elif num % 10 <= 5:
+        return num - (num % 10)
 
 
 print(round_sum(16, 17, 18)) # 60
