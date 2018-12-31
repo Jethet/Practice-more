@@ -3,9 +3,9 @@
 # values by 2 or more. Note: abs(num) computes the absolute value of a number.
 
 def close_far(a, b, c):
-    if abs(b) - a <= 1 and abs(c) - a >= 2:
+    if b - a <= abs(1) and c - a >= abs(2) and c - b >= abs(2):
         return True
-    elif abs(c) - a <= 1 and abs(b) - a >= 2:
+    if c - a <= abs(1) and b - a >= abs(2) and b - c >= abs(2):
         return True
     else:
         return False
@@ -13,3 +13,5 @@ def close_far(a, b, c):
 print(close_far(1, 2, 10)) # True
 print(close_far(1, 2, 3))  # False
 print(close_far(4, 1, 3))  # True
+print(close_far(8, 6, 9))  # True
+print(close_far(10, 10, 8))  # True
