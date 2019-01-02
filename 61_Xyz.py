@@ -3,7 +3,7 @@
 # "x.xyz" does not.
 
 def xyz_there(str):
-    str = str.replace('.xyz', '')
+    str = str.replace('.xyz', '')   # this deletes all instances of .xyz
     if 'xyz' in str:
         return True
     else:
