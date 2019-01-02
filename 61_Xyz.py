@@ -3,7 +3,8 @@
 # "x.xyz" does not.
 
 def xyz_there(str):
-    if 'xyz' in str and '.x' not in str:
+    str = str.replace('.xyz', '')
+    if 'xyz' in str:
         return True
     else:
         return False
