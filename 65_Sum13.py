@@ -4,14 +4,15 @@
 
 
 
-"""
-    for i in range(0, len(nums), 1):
-        if nums[0] != 13:
-            sum = nums[0]
-        elif nums[i] != 13 and nums[i -1] != 13:
-            sum += nums[i]
+def sum13(nums):
+    sum = 0
+    if len(nums) > 0 and nums[0] != 13:
+        sum = nums[0]
+        for i in range(1, len(nums), 1):
+            if nums[i] != 13 and nums[i -1] != 13:
+                sum += nums[i]
         return sum
-    """
+        """
 def sum13(nums):
     sum = 0
     if nums[0] != 13:
@@ -23,7 +24,7 @@ def sum13(nums):
         return 0
     else:
         return sum(nums)
-
+"""
 
 
 print(sum13([1, 2, 2, 1])) # 6
