@@ -17,3 +17,12 @@ def count_words(txt):
 	return len(txt.split())
 
 print(count_words('Did you see that coming?'))   # = 5
+
+# Create a function that takes a number (from 1 to 12) and return its
+# corresponding month name as a string.
+def month_name(num):
+    months = {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun',
+     7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'}
+    return months.get(num)
+
+print(month_name(4))
