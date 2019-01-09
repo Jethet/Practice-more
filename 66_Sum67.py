@@ -5,8 +5,10 @@
 def sum67(nums):
     sum = 0
     for i in range(len(nums)):
-        if nums[i] == 6 and nums[i:] == 7:
-            
+        if nums[i] != 6 and nums[i:] != 7:
+            sum += nums[i]
+    return sum
+
 
 
 
