@@ -1,4 +1,4 @@
-#Given a string, the front is first 3 chars. If string length less
+# Given a string, the front is first 3 chars. If string length less
 # than 3, front is whatever is there. Return new string which is
 # 3 copies of the front.
 
