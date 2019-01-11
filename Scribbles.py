@@ -1,4 +1,4 @@
+nums = [1, 2, 2, 1, 13, 4, 5]
 
-mylist = ['a', 'b', 'c', 'd']
-
-print(mylist.index('c'))
+for i in range(0, len(nums)):
+    nums[i] + nums[:i]
