@@ -6,10 +6,8 @@ Create a function that takes a list of numbers and returns the following statist
     Average Value
 """
 def minMaxLengthAverage(lst):
-    return min(lst)
-    return max(lst)
-    return len(lst)
-    return sum(lst) / len(lst)
+    return min(lst), max(lst), len(lst), sum(lst) / len(lst)
+
 
 
 
