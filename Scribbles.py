@@ -1,4 +1,7 @@
-nums = [1, 2, 2, 1, 13, 4, 5]
+def month_name(num):
+    months = {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', \
+    6: 'June', 7: 'July', 8: 'August', 9: 'September', 10: 'October', \
+    11: 'November', 12: 'December'}
+    return months.get(num)
 
-for i in range(0, len(nums)):
-    nums[i] + nums[:i]
+print(month_name(11))
