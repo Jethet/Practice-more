@@ -8,9 +8,6 @@ def repeat(item, times):
 
 
 print(repeat("edabit", 3)) # ["edabit", "edabit", "edabit"]
-
 print(repeat(13, 5))   # [13, 13, 13, 13, 13]
-
 print(repeat("7", 2))   # ["7", "7"]
-
 print(repeat(0, 0))       # []
