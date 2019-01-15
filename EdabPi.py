@@ -7,7 +7,5 @@ def my_pi(n):
 
 
 print(my_pi(5)) # 3.14159
-
 print(my_pi(4)) # 3.1416
-
 print(my_pi(15)) # 3.141592653589793
