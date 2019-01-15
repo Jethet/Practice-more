@@ -3,7 +3,11 @@
 
 
 def get_abs_sum(lst):
-    
+    my_list = []
+    for x in lst:
+        x = abs(x)
+        my_list.append(x)
+    return sum(my_list)
 
 
 print(get_abs_sum([2, -1, 4, 8, 10])) # 25
