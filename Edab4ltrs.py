@@ -9,7 +9,6 @@ def isFourLetters(lst):
     return my_list
 
 
-
 print(isFourLetters(["Ryan", "Kieran", "Jason", "Matt" ])) # ["Ryan", "Matt"]
 
 print(isFourLetters(["Tomato", "Potato", "Pair"]))      # ["Pair"]
