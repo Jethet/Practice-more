@@ -3,7 +3,7 @@
 
 def is_avg_whole(arr):
     average = sum(arr) / len(arr)
-    if average % 2 == 0:
+    if average % 1== 0:
         return True
     else:
         return False
