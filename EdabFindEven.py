@@ -2,7 +2,8 @@
 # from 1 to the given number.
 
 def find_even_nums(num):
-	return [i for i in num if num % 2 == 0]
+	return [i for i in range(1, num+1) if i % 2 == 0]
+
 
 
 
