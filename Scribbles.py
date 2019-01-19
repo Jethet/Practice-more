@@ -1,1 +1,3 @@
-print(ascii('a'))
+txt = 'string'
+txt.split()
+print(txt)
