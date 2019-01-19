@@ -1,10 +1,13 @@
 # Create a function that accepts a Date object and returns True if
 # it's Christmas Eve (December 24th) and False otherwise.
 
-from datetime import date
+import datetime
 
 def time_for_milk_and_cookies(date):
-    return datetime.date(2019, 12, 24)
+    if date.month == 12 and date.day == 24:
+        return True
+    else:
+        return False
 
 
 
