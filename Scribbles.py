@@ -1,3 +1,1 @@
-txt = 'string'
-txt.split()
-print(txt)
+list = [1, 3, 5, 6, 4, 9, 7]
