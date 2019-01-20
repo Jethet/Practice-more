@@ -1,7 +1,7 @@
 # Create a function that reverses a boolean value and returns the string
 # "boolean expected" if another variable type is given.
 
-def reverse(arg):
+def reverse(arg):    # code is not correct
     if arg = bool:
         return not arg
     else:
