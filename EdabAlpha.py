@@ -2,6 +2,7 @@
 # in alphabetical order.
 
 def alphabet_soup(txt):
+    return ''.join(sorted(txt))
 
 
 
