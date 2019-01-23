@@ -5,6 +5,12 @@
 # Some test cases contain special characters. Empty strings must return False.
 
 def is_valid_PIN(pin):
+    if len(pin) == 4:
+        return pin.isdecimal()
+    elif len(pin) == 6:
+        return pin.isdecimal()
+    else:
+        return False
 
 
 
