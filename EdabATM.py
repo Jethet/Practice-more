@@ -9,9 +9,6 @@ def is_valid_PIN(pin):
 
 
 print(is_valid_PIN("1234")) # True
-
 print(is_valid_PIN("12345")) # False
-
 print(is_valid_PIN("a234")) # False
-
 print(is_valid_PIN("")) # False
