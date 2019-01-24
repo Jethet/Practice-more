@@ -4,15 +4,19 @@
 # Special characters ($#@%) and numbers will be included in some test cases.
 
 def indexOfCaps(word):
+    caps_list = []
+    for x in word:
+        if x.isupper() == True:
+            y = word.index(x)
+            caps_list.append(y)
+    return caps_list
 
-    
+print(indexOfCaps("eDaBiT")) # [1, 3, 5]
 
-indexOfCaps("eDaBiT") ➞ [1, 3, 5]
+print(indexOfCaps("eQuINoX")) # [1, 3, 4, 6]
 
-indexOfCaps("eQuINoX") ➞ [1, 3, 4, 6]
+print(indexOfCaps("determine")) #[]
 
-indexOfCaps("determine") ➞ []
+print(indexOfCaps("STRIKE")) # [0, 1, 2, 3, 4, 5]
 
-indexOfCaps("STRIKE") ➞ [0, 1, 2, 3, 4, 5]
-
-indexOfCaps("sUn") ➞ [1]
+print(indexOfCaps("sUn")) # [1]
