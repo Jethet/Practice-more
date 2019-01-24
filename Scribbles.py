@@ -1,2 +1,2 @@
 x = 'example'
-print(x.index('p'))
+print(x.upper())
