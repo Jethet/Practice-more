@@ -1,2 +1,3 @@
-grades = {'4':'A+', '3':'B', '2.7':'B-'}
-print(grades.get('3'))
+lst = [1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5]
+for x in lst:
+    print(abs(x))
