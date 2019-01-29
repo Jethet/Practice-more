@@ -11,8 +11,9 @@ def sum_neg(lst):
             pos.append(x)
         elif x < 0:
             neg.append(x)
+    if lst == []:
+        return list('')
     return [len(pos), sum(neg)]
-
 
 
 print(sum_neg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])) # [10, -65]
