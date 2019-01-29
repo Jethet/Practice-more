@@ -1,17 +1,15 @@
-def day_amount(month, year):
-	if month in (1,3,5,7,8,10,12):
-		return 31
-	elif month in (4,6,9,11):
-		return 30
-	else: # month == 2
-		if any([year % 4 == 0 and not year % 100 == 0, year % 400 == 0 ]):
-			return 29
-		else:
-			return 28
+def sum_neg(lst):
+	if lst:
+		countPos = len([i for i in lst if i > 0])
+		sumNeg = sum([i for i in lst if i < 0])
+		return [countPos, sumNeg]
+	else:
+		return lst
 
-print(day_amount(2, 2018)) # 28
-print(day_amount(3, 2011)) # 31
-print(day_amount(4, 654)) # 30
-print(day_amount(2, 2020)) # 29
-print(day_amount(2, 200)) # 28
-print(day_amount(2, 1000)) # 29
+print(sum_neg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])) # [10, -65]
+
+print(sum_neg([92, 6, 73, -77, 81, -90, 99, 8, -85, 34])) # [7, -252]
+
+print(sum_neg([91, -4, 80, -73, -28])) # [2, -105]
+
+print(sum_neg([])) # []
