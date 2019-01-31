@@ -8,13 +8,15 @@
 # string it should return an empty string (fourth example).
 
 def maskify(txt):
-    txt = str(txt)
+    if len(txt) == 0:
+        return ''
     if len(txt) < 4:
-        return str(txt)
+        return txt
     if len(txt) >= 4:
-        for x in txt[0:-4]:
-            x == '#'
-        return str(txt)
+        new_txt1 = txt[0:-4]
+        new_txt2 = txt[-4::]
+        return ('#' * len(new_txt1)) + new_txt2
+
 
 
 print(maskify("4556364607935616")) # "############5616"
