@@ -3,7 +3,8 @@
 #                     SecondList = [6, 5, 4]
 #                     ThirdList = [9, 8, 7]
 
-sampleList = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#sampleList = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+sampleList = [11, 45, 8, 23, 14, 12, 78, 45, 89]
 FirstList = sampleList[0:3]
 SecondList = sampleList[3:6]
 ThirdList = sampleList[6:]
