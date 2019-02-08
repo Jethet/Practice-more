@@ -1,4 +1,8 @@
-my_nums = [1,2,3,4,5,6,7]
+def change(txt):
+    if 'a' in txt:
+        txt.replace('a', '4')
+    return txt
 
-square = lambda num: num ** 2
-print(square(4))
+str = 'acht'
+str.replace('a', '4')
+print(str)
