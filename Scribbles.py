@@ -4,5 +4,4 @@ def change(txt):
     return txt
 
 str = 'acht'
-str.replace('a', '4')
-print(str)
+print(str.replace('a', '4'))

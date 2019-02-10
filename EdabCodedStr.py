@@ -5,7 +5,7 @@
 
 def hacker_speak(txt):
     if 'a' in txt:
-        txt.replace('a', '4')
+        return txt.replace('a', '4')
 
 print(hacker_speak("javascript is cool")) #➞ "j4v45cr1pt 15 c00l"
 
