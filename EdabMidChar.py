@@ -4,16 +4,14 @@
 
 def get_middle(word):
     if len(word) % 2 == 1:
-        mid = len(word)/2
-        return mid
-        #return word[mid]
-    #if len(word) % 2 == 0:
-        #mid = len(word)/2
-        #return word[mid] + word[mid+1]
+        mid = round(len(word)/2)
+        return word[mid-1]
 
-print(get_middle('whatevery'))
+    else: #len(word) % 2 == 0:
+        mid = round(len(word)/2)
+        return word[mid-1] + word[mid]
 
-#print(get_middle("test")) #➞ "es"
-#print(get_middle("testing")) #➞ "t"
-#print(get_middle("middle")) #➞ "dd"
-#print(get_middle("A")) #➞ "A"
+print(get_middle("test")) #➞ "es"
+print(get_middle("testing")) #➞ "t"
+print(get_middle("middle")) #➞ "dd"
+print(get_middle("A")) #➞ "A"
