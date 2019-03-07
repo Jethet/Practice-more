@@ -1,12 +1,19 @@
 # Create a function that takes a string, removes all "special" characters
 # (e.g. ! @ # $ % ^ & \ *) and returns the new string.
 # The only non-alphanumeric characters allowed are dashes -, underscores _ and spaces.
-
+"""
 def remove_special_characters(txt):
     for x in txt:
-        if x in ['!', '@', '#', '$', '^', '&', '*', '\\']:
+        if x in ['!', '@', '#', '%', '$', '^', '&', '*', '\\', '(', ')']:
             return txt.replace(x, '')
-
+"""
+# From Edabit:
+def remove_special_characters(txt):
+  new_txt = ''
+  for char in txt:
+    if char.isalnum() or char in {'-', '_', ' '}:
+      new_txt += char
+  return new_txt
 
 
 print(remove_special_characters("The quick brown fox!")) # "The quick brown fox"
