@@ -4,12 +4,12 @@
 # number is first.
 
 def high_low(txt):
-	numbers = [int(num) for num in txt]
-	#a = max(numbers)
-	#b = min(numbers)
-	return str(numbers)
+	numbers = txt.split()
+	a = max(numbers, key=int)
+	b = min(numbers, key=int)
+	return str(str(a) + ' '+  str(b))
 
-
+print(high_low("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"))
 print(high_low("1 2 3 4 5")) # "5 1"
 print(high_low("1 2 -3 4 5")) # "5 -3"
 print(high_low("1 9 3 4 -5")) # "9 -5"
