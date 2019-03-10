@@ -5,17 +5,13 @@
 # Should be case insensitive and special characters (punctuation or spaces)
 # should be ignored.
 
+import string
+
 def is_palindrome(txt):
-    punct = ['"', ' ', ',', '.', ';', '?', "'", '!', ':']
-    for x in txt:
-        if x in punct:
-            new_txt = ''.join(x for x in txt if x not in punct)
-
-
-        ???else:
-            new_txt = ''.join(txt)
-            print(new_txt)
-            return new_txt.islower() == new_txt[::-1].islower()
+    exclude = set(string.punctuation)
+    txt = ''.join(ch for ch in txt if ch not in exclude).replace(' ','').lower()
+    #print(txt)
+    return txt == txt[::-1]
 
 
 print(is_palindrome("A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!")) # True
