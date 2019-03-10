@@ -9,12 +9,13 @@ def is_palindrome(txt):
     punct = ['"', ' ', ',', '.', ';', '?', "'", '!', ':']
     for x in txt:
         if x in punct:
-            new_txt = txt.replace(x, '')
-    return(new_txt)
-    print(new_txt)
-    #txt2 = txt[::-1].islower()
-    #print(txt, txt2)
-    #return txt == txt2
+            new_txt = ''.join(x for x in txt if x not in punct)
+
+
+        ???else:
+            new_txt = ''.join(txt)
+            print(new_txt)
+            return new_txt.islower() == new_txt[::-1].islower()
 
 
 print(is_palindrome("A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!")) # True
