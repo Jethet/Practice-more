@@ -2,7 +2,7 @@
 # number of unique characters from the combined string.
 
 def count_unique(s1, s2):
-    return set(s1 + s2)
+    return len(set(s1 + s2))
 
 print(count_unique("apple", "play")) #➞ 5
 # "appleplay" has 5 unique characters:
