@@ -1,4 +1,5 @@
-**Dictionaries:** are used to store data values in key:value pairs, using curly brackets around the pairs. Dictionaries are mutable, and any element can be a value in a dictionary.    
+**Dictionaries:** are used to store data values in key:value pairs, using curly brackets around the pairs.  
+Dictionaries are mutable, and any element can be a value in a dictionary.    
 
 ```py
 myDict = {a: 1, b: 2, c: 3}  #returns {'a': 1, 'b': 2, 'c': 3}
@@ -19,7 +20,7 @@ setdefault()  Returns the value of the specified key. If the key does not exist,
 update()  Updates the dictionary with the specified key:value pair  
 values()  Returns a list of all the values in the dictionary  
 
-**You have to reference a key:value pair by its key:** 
+**You have to reference a key:value pair by its key:**  
 You cannot use myDict[0], use myDict[key1] and the value for key1 is returned.  
 
 **Add a value to a dict:**  
@@ -30,7 +31,9 @@ print(myDict)  #returns {'a': 1, 'b': 2, 'c': 3, 'f': 'new value'}
 ```
 
 **Dictionary comprehension:**  
-`{x: x**2 for x in (2, 3, 4)}` returns {2: 4, 3: 9, 4: 16}
+```py
+{x: x**2 for x in (2, 3, 4)}  #returns {2: 4, 3: 9, 4: 16}
+```
 
 **Convert keys-values into a dictionary:**  
 ```py
