@@ -79,5 +79,23 @@
 # x = {x: x**2 for x in (2, 3, 4)}
 # print(x)
 
-a = dict(a=1, b=2, c=3)
-print(a)
+# a = dict(a=1, b=2, c=3)
+# print(a)
+
+# if 3 > 2:
+#   print('Yes')
+# else:
+#   print('No')
+
+def http_error(status):
+  match status:
+    case 400:
+      return "bad request"
+    case 404:
+      return "not found"
+    case 418:
+      return "no idea"
+    case _:
+      return "something is wrong"
+    
+print(http_error(502))
