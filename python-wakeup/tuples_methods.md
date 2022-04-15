@@ -40,5 +40,5 @@ print(y)  #returns ['a', 'b', 'd'] => second value
 **Tuple comprehension:**  
 Same as list comprehension but using the tuple() function:  
 ```py
-x = tuple([x**2 for x in reange(10)])  #returns (0, 1, 4, 9, 16, 25, 36, 49, 64, 81)
+x = tuple([x**2 for x in range(10)])  #returns (0, 1, 4, 9, 16, 25, 36, 49, 64, 81)
 ```

@@ -40,5 +40,22 @@
 # myList = [1, 2, 3]
 # x = tuple(myList)
 
-x = tuple([x**2 for x in range(10)])
+# x = tuple([x**2 for x in range(10)])
+# print(x)
+
+# basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+# print(basket)# show that duplicates have been removed
+# print('orange' in basket)
+# print('juice' in basket)
+
+x = ['apple', 'orange', 'apple', 'banana', 'peach']
 print(x)
+print(set(x))
+
+a = set('abracadabra')
+b = set('alacazam')
+print(a)     # unique letters in a
+print(a - b) # letters in a but not in b
+print(a | b) # letters in a or b or both
+print(a & b) # letters in both a and b
+print(a ^ b) # letters in a or b but not both
