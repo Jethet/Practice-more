@@ -48,14 +48,36 @@
 # print('orange' in basket)
 # print('juice' in basket)
 
-x = ['apple', 'orange', 'apple', 'banana', 'peach']
-print(x)
-print(set(x))
+# x = ['apple', 'orange', 'apple', 'banana', 'peach']
+# print(x)
+# print(set(x))
 
-a = set('abracadabra')
-b = set('alacazam')
-print(a)     # unique letters in a
-print(a - b) # letters in a but not in b
-print(a | b) # letters in a or b or both
-print(a & b) # letters in both a and b
-print(a ^ b) # letters in a or b but not both
+# a = set('abracadabra')
+# b = set('alacazam')
+# print(a)     # unique letters in a
+# print(a - b) # letters in a but not in b
+# print(a | b) # letters in a or b or both
+# print(a & b) # letters in both a and b
+# print(a ^ b) # letters in a or b but not both
+
+# myDict = { 'a': 1, 'b': 2, 'c': 3}
+# print(myDict)
+# newDict = {1: [1,2,3], 'a': {1: 'a', 2: 'b'}}
+# print(newDict)
+
+# print(newDict['a'])
+
+# myDict = {'a': 1, 'b': 2, 'c': 3}
+# myDict['f'] = 'new value'
+# print(myDict)
+# print(len(myDict))
+
+# myKeys = 22, 33, 44
+# myValues = 0
+# newDict = dict.fromkeys(myKeys, myValues)
+# print(newDict)
+# x = {x: x**2 for x in (2, 3, 4)}
+# print(x)
+
+a = dict(a=1, b=2, c=3)
+print(a)
