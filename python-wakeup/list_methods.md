@@ -39,7 +39,7 @@ x[0][0] returns 1 (first element of first list)
 x[1][2] returns 6 (third element of second list)  
 
 **list comprehension** makes it possible to write compact code:  
-````py
+```py
 # instead of writing:
 y = []
 for x in range(10):
