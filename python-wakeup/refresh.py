@@ -116,6 +116,21 @@
 
 # print(list(range(-10, -100, -30)))
 
-myList = ['who', 'is', 'there', 'now']
-for x in range(len(myList)):
-  print(x, myList[x])
+# myList = ['who', 'is', 'there', 'now']
+# for x in range(len(myList)):
+#   print(x, myList[x])
+  
+# for n in range(2, 10): #equivalent of...for n in [2,3,4,5,6,7,8,9]:
+#   for x in range(2, n): #first loop is for x in range(2, 2):
+#       if n % x == 0: 
+#           print(n, 'equals', x, '*', n//x)
+#           break
+#   #the else runs when no break clause occurs
+#   else:
+#       print(n, 'is a prime number')
+
+for num in range(2, 10):
+  if num % 2 == 0:
+    print("Found an even number: ", num)
+    continue
+  print("Found an odd number: ", num)
