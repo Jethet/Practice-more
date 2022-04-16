@@ -87,15 +87,35 @@
 # else:
 #   print('No')
 
-def http_error(status):
-  match status:
-    case 400:
-      return "bad request"
-    case 404:
-      return "not found"
-    case 418:
-      return "no idea"
-    case _:
-      return "something is wrong"
+# def http_error(status):
+#   match status:
+#     case 400:
+#       return "bad request"
+#     case 404:
+#       return "not found"
+#     case 418:
+#       return "no idea"
+#     case _:
+#       return "something is wrong"
     
-print(http_error(502))
+# print(http_error(502))
+
+# words = ['cat', 'window', 'defenestrate']
+# for w in words:
+#     print(w, len(w))
+
+# users = {
+#     'Quinn': 'active',
+#     'Éléonore': 'inactive',
+#     'John': 'active'
+#     }
+
+# for user, status in users.items():
+#   if status == 'inactive':
+#     print(user, status)
+
+# print(list(range(-10, -100, -30)))
+
+myList = ['who', 'is', 'there', 'now']
+for x in range(len(myList)):
+  print(x, myList[x])
