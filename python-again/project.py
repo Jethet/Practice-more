@@ -14,16 +14,16 @@ class APICall:
           raise TypeError("API error")
         
         
-  class ChuckNorris(APICall):
-    # ChuckNorris API
-    url = "https://api.chucknorris.io/jokes/random?category="
-    categories = ["animal", "dev"]
+class ChuckNorris(APICall):
+  # ChuckNorris API
+  url = "https://api.chucknorris.io/jokes/random?category="
+  categories = ["animal", "dev"]
+  
+  def __init__(self, category):
+    self.category = category
+    if not self.category in self.categories:
+      raise TypeError("category options ['animal', 'dev']")
     
-    def __init__(self, category):
-      self.category = category
-      if not self.category in self.categories:
-        raise TypeError("category options ['animal', 'dev']")
-      
-    def get(self):
-      api_url = f'{self.url}{self.category}'
-      return self.call("GET", api_url)
+  def get(self):
+    api_url = f'{self.url}{self.category}'
+    return self.call("GET", api_url)
