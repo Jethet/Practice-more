@@ -12,7 +12,7 @@
 * To uninstall a package using pipenv: `pipenv uninstall <package-name>`
 * To uninstall all packages use `-all` flag
 * To safely remove a package using pipenv: `pipenv -rm`
-
+* To deactivate the pipenv environment, typ `deactivate` in the command line
 
 **Pip commands**  
 
