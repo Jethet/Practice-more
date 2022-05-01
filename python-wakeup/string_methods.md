@@ -1,5 +1,7 @@
 **String methods:**  
 
+*These methods do not change the original string: they return a new, modified string*
+
 **capitalize()** Converts the first character to upper case  
 **casefold()** Converts string into lower case  
 **center()** Returns a centered string  
@@ -58,4 +60,14 @@ str((x, y, ('spam', 'eggs')))
  
  print('{0} and {1}'.format('spam', 'eggs'))   
  print('{1} and {0}'.format('‘spam’', '‘eggs’'))
+```
+* len() returns the length of a string
+* `in` checks if a string contains a substring: `name = 'Anna'  print("nn" in name)` returns `True`
+
+**Slicing: grabbing part of a string**  
+```python
+name = "Christine"
+name[0:5]  #returns Chris
+name[:5]   #returns Chris
+name[5:]   #returns tine
 ```

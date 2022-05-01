@@ -14,12 +14,33 @@ Input : x = 8, y = 3
 Output :(2, 2)
 
 
+
 **Indexing:**  
 Works forwards and backwards:  
 P | Y | T | H | O | N 
 --|---|---|---|---|--
 0 | 1 | 2 | 3 | 4 | 5
 -6 | -5| -4 | -3 | -2 | -1
+
+**Booleans**  
+* numbers are always True, except for the number 0
+* strings are False only when empty
+* lists, tuples, sets and dictionaries are only False when empty
+* check a value with type(): `type(variable) == bool` (returns True or False)
+* check with isinstance(): `isinstance(variable, bool)` (returns True or False)
+* use any() to check if any of the values in an iterable are True: `any([myArray])` (returns True or False)
+* with all() the same check is done but all() only returns True if all values passed to it are True
+
+**Numbers**  
+Three types: int, float and complex
+```python
+oneComplex = 2+3j
+print(oneComplex)  #returns (2+3j)
+myComplex = complex(2, +3j)
+print(myComplex)  #returns (-1+0j)
+print(myComplex.real) #returns -1.0
+print(myComplex.imag) #returns 1.0
+```
 
 **Error handling in Python**  
 The main distinguishable error types are:

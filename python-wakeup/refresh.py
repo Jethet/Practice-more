@@ -135,24 +135,34 @@
 #     continue
 #   print("Found an odd number: ", num)
 
-class MyClass:
-    """A simple example class"""
-    i = 12345
+# class MyClass:
+#     """A simple example class"""
+#     i = 12345
     
-    def f(self):
-        return 'hello world'
+#     def f(self):
+#         return 'hello world'
 
-print(MyClass.i) # return the int
-print(MyClass.f) # returns a function object
-print(MyClass.__doc__) # magic method/dunder method that return the text literal
+# print(MyClass.i) # return the int
+# print(MyClass.f) # returns a function object
+# print(MyClass.__doc__) # magic method/dunder method that return the text literal
 
-x = MyClass() #instantiates the class
-print(x.i) # return the int
-print(x.f()) # calls the class method
+# x = MyClass() #instantiates the class
+# print(x.i) # return the int
+# print(x.f()) # calls the class method
 
-x.counter = 1
-while x.counter < 10:
-  x.counter = x.counter * 2
-  print(x.counter)
+# x.counter = 1
+# while x.counter < 10:
+#   x.counter = x.counter * 2
+#   print(x.counter)
 
-print(x.counter)
+# print(x.counter)
+
+# name = "Christine"
+# print(name[0:5])
+# print(name[:3])
+# print(name[3:])
+
+myComplex = complex(2, +3j)
+print(myComplex)
+print(myComplex.real)
+print(myComplex.imag)
