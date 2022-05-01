@@ -14,7 +14,6 @@ Input : x = 8, y = 3
 Output :(2, 2)
 
 
-
 **Indexing:**  
 Works forwards and backwards:  
 P | Y | T | H | O | N 
@@ -41,6 +40,12 @@ print(myComplex)  #returns (-1+0j)
 print(myComplex.real) #returns -1.0
 print(myComplex.imag) #returns 1.0
 ```
+
+Number methods:
+* abs() returns the absolute value of a number
+* round() returns the value rounded to the nearest integer; with a second parameter the decimal point can be set: `round(0.1265, 3)` returns 0.127
+
+Variables that should never change can be declared using uppercase: `MYCONSTANT = 25` to indicate they should not be changed (it will not prevent them to be overwritten, it's just convention)
 
 **Error handling in Python**  
 The main distinguishable error types are:

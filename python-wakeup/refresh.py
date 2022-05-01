@@ -166,3 +166,10 @@ myComplex = complex(2, +3j)
 print(myComplex)
 print(myComplex.real)
 print(myComplex.imag)
+
+print(round(0.1265, 3))
+
+MYCONSTANT = 25
+print(MYCONSTANT)
+MYCONSTANT = 28
+print(MYCONSTANT)
