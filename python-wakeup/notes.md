@@ -1,3 +1,6 @@
+**Installation problems:**  
+Remember to use `pip3 install`, not `pip`. After installing, restart VSC. This should remove the problem of module not found with pylance.
+
 Python has five standard data types:
 * Numbers
 * String
