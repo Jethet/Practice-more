@@ -73,7 +73,18 @@ name[5:]   #returns tine
 ```
 NB: [0:5] means **starting from index 0 to index 5** NOT including the character at the ending (in this case 5).
 
-**Using input()**
-The `input()` function saves the user input as a string, even if the user enters a number.
+**Using input()**  
+The `input()` function saves the user input as a string, even if the user enters a number.  
 If a number is asked from the user, you have to **convert** it to the appropriate data type.
+
+**(Formatted) String literals**  
+`f"string, {variable}, second_string third_string, {second_variable}"`  
+The string literal is used instead of concatenation or the str.format() method. Example:  
+```python
+name = "John"
+age = 45
+f"Hello {name}, how are you? You're {age} now, aren't you?"
+```
+
+**Next line in Python: use \ (backslash)**  
 
