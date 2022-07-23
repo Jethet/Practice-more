@@ -72,3 +72,8 @@ name[:5]   #returns Chris
 name[5:]   #returns tine
 ```
 NB: [0:5] means **starting from index 0 to index 5** NOT including the character at the ending (in this case 5).
+
+**Using input()**
+The `input()` function saves the user input as a string, even if the user enters a number.
+If a number is asked from the user, you have to **convert** it to the appropriate data type.
+
