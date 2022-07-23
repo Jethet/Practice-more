@@ -71,3 +71,4 @@ name[0:5]  #returns Chris
 name[:5]   #returns Chris
 name[5:]   #returns tine
 ```
+NB: [0:5] means **starting from index 0 to index 5** NOT including the character at the ending (in this case 5).
