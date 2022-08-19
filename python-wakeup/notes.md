@@ -50,6 +50,10 @@ Number methods:
 
 Variables that should never change can be declared using uppercase: `MYCONSTANT = 25` to indicate they should not be changed (it will not prevent them to be overwritten, it's just convention)
 
+**Strings**  
+To go to a new line in a string, use `\n` *inside* the string:  
+`"This is a string followed by another string \nThis is the next string`.
+
 **Error handling in Python**  
 The main distinguishable error types are:
 * syntax errors (= parsing errors) are the most common
