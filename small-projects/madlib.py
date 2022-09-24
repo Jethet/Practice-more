@@ -1,3 +1,4 @@
+print("This is not a ____ text, you have to ___ words by yourself to make it ____")
 word1 = input("Enter the first word: ")
 word2 = input("Enter the second word: ")
 word3 = input("Enter the third word: ")
