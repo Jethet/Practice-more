@@ -48,6 +48,8 @@ Number methods:
 * abs() returns the absolute value of a number
 * round() returns the value rounded to the nearest integer; with a second parameter the decimal point can be set: `round(0.1265, 3)` returns 0.127
 
+The double slash // operator performs floor division. This // operator divides the first number by the second number and rounds the result **down** to the nearest integer (or whole number). It works the same as `math.floor()`.
+
 Variables that should never change can be declared using uppercase: `MYCONSTANT = 25` to indicate they should not be changed (it will not prevent them to be overwritten, it's just convention)
 
 **Strings**  
