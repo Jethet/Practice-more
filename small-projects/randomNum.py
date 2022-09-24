@@ -1,10 +1,10 @@
 import random
 
 # generate random number
-# randomNum = (random.randrange(0,10)) 
+# randomNum = (random.randrange(0,10)) ??
 
 def guessingGame(x):
-  compNum = random.randrange(1, x)
+  compNum = random.randint(1, x)
   guess = 0
   
   while guess != compNum:
