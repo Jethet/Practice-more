@@ -4,6 +4,20 @@ Classes provide a means of bundling data and functionality together. Creating a
 new class creates a new type of object, allowing new instances of that type to be 
 made.
 
+Attributes of a class can be created at class level or instance level:
+
+**class level:**
+* class level attributes are variables that are inherited by every object of the class: they are shared across every object of the class
+* value of the class attributes remains the same for every new object of the class
+
+**instance level:**
+* instance level attributes are unique to the specific object
+* different values can be defined for each object of a class with the `__init__()` function
+
+The 'self' keyword represents the instance of the class: it works as a **handle for accessing the data members like attributes** from the class methods.
+
+The `__init__()` is called automatically by Python for every object created from the class. **It's purpose is to initialize the object attributes with values that are supplied by the user**. It is known as Constructor in OOP.
+
 The class inheritance mechanism allows multiple base classes. A derived class 
 can override any methods of its base class or classes, and a method can call 
 the method of a base class with the same name.
