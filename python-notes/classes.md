@@ -14,6 +14,36 @@ Attributes of a class can be created at class level or instance level:
 * instance level attributes are unique to the specific object
 * different values can be defined for each object of a class with the `__init__()` function
 
+**Class and instance variables**  
+```py
+class Dog:
+    kind = 'canine' # class variable shared by all instances
+
+    def __init__(self, name):
+        self.name = name  # instance variable unique to each instance
+        
+    def add_trick(self, trick):
+        self.tricks.append(trick)  #this is appended to the instance, NOT the class
+
+d = Dog('Fido')
+e = Dog('Buddy')
+d.kind  #returns canine
+e.kind  #returns canine
+d.name  #returns Fido
+e.name  #returns Buddy
+d.add_trick('roll over')
+e.add_trick('play dead')
+d.tricks #returns only 'roll over' because that is assigned to d only
+```
+
+**Inheritance**  
+A base class can be added when a class object is constructed, example:  
+```py
+class Dog(AnimalClass):
+    kind = 'canine' # class variable shared by all instances
+```
+If a requested attribute is not found in the class, the search will look into the base class for that attribute. The derived class can extend or override the base class methods.
+
 The 'self' keyword represents the instance of the class: it works as a **handle for accessing the data members like attributes** from the class methods.
 
 The `__init__()` is called automatically by Python for every object created from the class. **It's purpose is to initialize the object attributes with values that are supplied by the user**. It is known as Constructor in OOP.
@@ -60,34 +90,4 @@ print(x.counter)  #returns 16 as last value: it is bigger than 10 so the loop st
 
 del x.counter  #this removes the attribute completely
 ```
-
-**Class and instance variables**  
-```py
-class Dog:
-    kind = 'canine' # class variable shared by all instances
-
-    def __init__(self, name):
-        self.name = name  # instance variable unique to each instance
-        
-    def add_trick(self, trick):
-        self.tricks.append(trick)  #this is appended to the instance, NOT the class
-
-d = Dog('Fido')
-e = Dog('Buddy')
-d.kind  #returns canine
-e.kind  #returns canine
-d.name  #returns Fido
-e.name  #returns Buddy
-d.add_trick('roll over')
-e.add_trick('play dead')
-d.tricks #returns only 'roll over' because that is assigned to d, nothing else
-```
-
-**Inheritance**  
-A base class can be added when a class object is constructed, example:  
-```py
-class Dog(AnimalClass):
-    kind = 'canine' # class variable shared by all instances
-```
-If a requested attribute is not found in the class, the search will look into the base class for that attribute. The derived class can extend or override the base class methods.
 
