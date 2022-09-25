@@ -9,10 +9,12 @@ Attributes of a class can be created at class level or instance level:
 **class level:**
 * class level attributes are variables that are inherited by every object of the class: they are shared across every object of the class
 * value of the class attributes remains the same for every new object of the class
+* they are defined outside the `__init__()` function, and placed at the top
 
 **instance level:**
 * instance level attributes are unique to the specific object
 * different values can be defined for each object of a class with the `__init__()` function
+* instance attributes are placed below the `__init__()` function and that is always under the class attributes.
 
 **Class and instance variables**  
 ```py

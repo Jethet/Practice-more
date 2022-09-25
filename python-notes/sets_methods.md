@@ -1,6 +1,16 @@
 **Sets:**  
 A set is an unordered collection with no duplicate elements (contrary to a list, all items in a set are *unique*). A set is defined by curly brackets {}. Sets are mutable: items can be changed.
 
+Example:
+```py
+numbers = (1, 2, 3, 6, 3, 6, 2, 7, 8, 9, 4, 2)
+
+setNumbers = set(numbers)
+print(numbers)      # returns (1, 2, 3, 6, 3, 6, 2, 7, 8, 9, 4, 2)
+print(setNumbers)   # returns {1, 2, 3, 4, 6, 7, 8, 9}
+print(list(setNumbers))  # returns [1, 2, 3, 4, 6, 7, 8, 9]
+```
+
 **Methods:**  
 add()        Adds an element to a set  
 clear()      Removes all the elements from the set  
