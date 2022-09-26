@@ -1,9 +1,13 @@
 from player import HumanPlayer, RandomComputerPlayer
 
 class TicTacToe:
-    def __init__(self, board):
-        self.board = ['' for _ in range(9)]  # a single list to represent 3 x 3 board
-        self.current_winner = None           # keep track of winner
+    def __init__(self):
+        self.board = self.make_board()
+        self.current_winner = None      # keep track of winner
+
+    @staticmethod
+    def make_board():
+        return ['' for _ in range(9)]  # a single list to represent 3 x 3 board
 
     def print_board(self):
         for row in [self.board[i*3:(i+1)*3] for i in range(3)]:
@@ -16,26 +20,9 @@ class TicTacToe:
         for row in number_board:
             print('| ' + ' | '.join(row) + ' |')
 
-    def available_moves(self):
-        # moves is empty list to be filled with spots that are still open:
-        # for 'x' on row 1 spot 1 the list index is [(0, 'x')], etc.
-        return [i for i, spot in enumerate(self.board) if spot == '']
-        # this is LIST COMPREHENSION of the below for loop:
-        # moves = []
-        # for (i, spot) in enumerate(self.board):
-        #     if spot == '':
-        #         moves.append(i)
-        # return moves
-
-    def empty_squares(self):
-        return ' ' in self.board
-
-    def num_empty_squares(self):
-        return self.board.count(' ')
-
     def make_move(self, square, letter):
-        # if valid move, make move: assign square to letter and return tru
-        # if invalid, return false
+            # if valid move, make move: assign square to letter and return tru
+            # if invalid, return false
         if self.board[square] == ' ':
             self.board[square] == letter
             if self.winner(square, letter):
@@ -68,7 +55,24 @@ class TicTacToe:
 
         # if all these checks fail, there is no winner
         return False    
-        
+
+    def empty_squares(self):
+            return ' ' in self.board
+
+    def num_empty_squares(self):
+        return self.board.count(' ')
+    
+    def available_moves(self):
+        # moves is empty list to be filled with spots that are still open:
+        # for 'x' on row 1 spot 1 the list index is [(0, 'x')], etc.
+        return [i for i, spot in enumerate(self.board) if spot == '']
+        # this is LIST COMPREHENSION of the below for loop:
+        # moves = []
+        # for (i, spot) in enumerate(self.board):
+        #     if spot == '':
+        #         moves.append(i)
+        # return moves  
+
 def play(game, x_player, o_player, print_game=True):
     # returns winner or None in case of tie
     if print_game:
@@ -95,8 +99,8 @@ def play(game, x_player, o_player, print_game=True):
             
             letter = 'O' if letter == 'X' else 'X'
 
-        if print_game:
-            print("It's a tie!")
+    if print_game:
+        print("It's a tie!")
 
 if __name__ == '__main__':
     x_player = HumanPlayer('X')
