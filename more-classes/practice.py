@@ -64,4 +64,3 @@
 
 # playerA.addCapital()
 # playerB.addCapital()
-

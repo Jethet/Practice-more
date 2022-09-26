@@ -93,3 +93,65 @@ print(x.counter)  #returns 16 as last value: it is bigger than 10 so the loop st
 del x.counter  #this removes the attribute completely
 ```
 
+**Python super()**  
+Calling super() gives access to methods in a superclass from the subclass that inherits from it. Using super() alone returns a temporary object of the superclass that then allows you to call that superclass’s methods. A common use case is building classes that extend the functionality of previously built classes.
+
+Example with similar objects:
+```py
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * self.length + 2 * self.width
+
+class Square:
+    def __init__(self, length):
+        self.length = length
+
+    def area(self):
+        return self.length * self.length
+
+    def perimeter(self):
+        return 4 * self.length
+```
+Some code is duplicated because the classes have similar attributes. Using `super()` the code is simplified:
+```py
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * self.length + 2 * self.width
+
+# Here we declare that the Square class inherits from the Rectangle class
+class Square(Rectangle):
+    def __init__(self, length):
+        super().__init__(length, length)
+```
+In this example, Rectangle is the superclass, and Square is the subclass. Using `super()` allows you to call methods of the superclass in your subclass. The primary use case of this is to extend the functionality of the inherited method.
+
+Now we can create a class Cube that inherits from Square and extends the functionality of .area() (inherited from the Rectangle class through Square):
+```py
+class Square(Rectangle):
+    def __init__(self, length):
+        super().__init__(length, length)
+
+class Cube(Square):
+    def surface_area(self):
+        face_area = super().area()
+        return face_area * 6
+
+    def volume(self):
+        face_area = super().area()
+        return face_area * self.length
+```
+**Important:** `super()` has to be called in the Cube class to access the methods inherited from the superclass Rectangle.

@@ -14,3 +14,14 @@ class TicTacToe:
         number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range(3)]
         for row in number_board:
             print('| ' + ' | '.join(row) + ' |')
+
+    def available_moves(self):
+        # moves is empty list to be filled with spots that are still open:
+        # for 'x' on row 1 spot 1 the list index is [(0, 'x')], etc.
+        return [i for i, spot in enumerate(self.board) if spot == '']
+        # this is LIST COMPREHENSION of the below for loop:
+        # moves = []
+        # for (i, spot) in enumerate(self.board):
+        #     if spot == '':
+        #         moves.append(i)
+        # return moves
