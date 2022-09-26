@@ -26,8 +26,7 @@ class HumanPlayer(Player):
         valid_square = False
         val = None
         while not valid_square:
-            print("testing")
-            square = input(self.letter + '\'s turn. Input move (0 to 9): ')
+            square = input(self.letter + "'s turn. Input move (0 to 9): ")
             # check to see if it is a correct value: try to cast it into integer
             # if not integer, it is invalid
             # if spot not available on board, it is also invalid

@@ -21,7 +21,7 @@ class TicTacToe:
             print('| ' + ' | '.join(row) + ' |')
 
     def make_move(self, square, letter):
-            # if valid move, make move: assign square to letter and return tru
+            # if valid move, make move: assign square to letter and return true
             # if invalid, return false
         if self.board[square] == ' ':
             self.board[square] == letter
@@ -88,8 +88,8 @@ def play(game, x_player, o_player, print_game=True):
 
         if game.make_move(square, letter):
             if print_game:
-                print(letter + f" makes a move to sqaure {square}")
-                game.print_board
+                print(letter + " makes a move to square {}".format(square))
+                game.print_board()
                 print('')  # print empty line under printed board just for visual effect
 
             if game.current_winner:
@@ -105,6 +105,6 @@ def play(game, x_player, o_player, print_game=True):
 if __name__ == '__main__':
     x_player = HumanPlayer('X')
     o_player = RandomComputerPlayer('O')
-    myGame = TicTacToe()
-    play(myGame, x_player, o_player, print_game=True)
+    t = TicTacToe()
+    play(t, x_player, o_player, print_game=True)
     
