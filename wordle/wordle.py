@@ -1,8 +1,10 @@
 import random
-# from colorama import init, Fore, Back
 from words import wordList
 
-# colorama.init()
+
+blue = '\033[94m' 
+red = '\033[91m' 
+green = '\033[92m'
 
 def randomWord():
     randWord = random.choice(wordList)
