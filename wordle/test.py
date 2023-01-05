@@ -1,29 +1,40 @@
-# word = "metal"
-# guess = "dream"
+import random
+from words import wordList
+
+blue = '\033[94m' 
+red = '\033[91m' 
 green = '\033[92m'
+reset = '\033[0m'
 
-# indexWord = [i for i, c in enumerate(word)]
-# indexGuess = [i for i, b in enumerate(guess)]
+def randomWord():
+    randWord = random.choice(wordList)
+    return randWord
 
-# for x in guess:
-#     if x in word:
-#         indexX = [i for i, d in enumerate(word) if d == x]
-#         for y in indexX:
-#             if y in indexX:
-#                 print(f'{green}', y)
+def game(randWord):
+    guessNumber = 0
 
-word = "toast"
-guess = "guest"
-for x in word:
-    if x in guess:
-        indexGuessChar = [i for i, b in enumerate(guess) if b == x]
-        indexWordChar = [i for i, a in enumerate(word) if a == x]
-        for b in indexGuessChar:
-            for a in indexWordChar:
-                if b == a:        
-                    print(f'{green}', x)
+    if guessNumber < 5:
+        guess = input("Please enter your word: ")
+
+        for x in guess:
+            while guessNumber < 5:
+                if x in randWord:
+                #     print(f'{blue}', x)
+                # if x not in randWord:
+                #     print(f'{red}', x)
+                    indexGuessChar = [i for i, b in enumerate(guess) if b == x]
+                    indexWordChar = [i for i, a in enumerate(randWord) if a == x]
+                    for b in indexGuessChar:
+                        for a in indexWordChar:
+                            if b == a:        
+                                print(f'{green}', x)
+                            else:
+                                print(f'{blue}', x)
                 else:
-                    print("wrong")
-    
+                    print(f'{red}', x)
+            guessNumber += 1
 
-        
+            print(randWord)
+            print(guessNumber)
+                
+game(randomWord())

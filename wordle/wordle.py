@@ -11,22 +11,31 @@ def randomWord():
     return randWord
 
 def game(randWord):
-    guess = input("Please enter your word: ")
     guessNumber = 0
 
     if guessNumber < 5:
+        guess = input("Please enter your word: ")
+
         for x in guess:
             if x in randWord:
-                print(f'{blue}', x)
-
-            if x not in randWord:
+            #     print(f'{blue}', x)
+            # if x not in randWord:
+            #     print(f'{red}', x)
+                indexGuessChar = [i for i, b in enumerate(guess) if b == x]
+                indexWordChar = [i for i, a in enumerate(randWord) if a == x]
+                for b in indexGuessChar:
+                    for a in indexWordChar:
+                        if b == a:        
+                            print(f'{green}', x)
+                        else:
+                            print(f'{blue}', x)
+                guessNumber += 1
+            else:
                 print(f'{red}', x)
+
         print(randWord)
-
-        guessNumber += 1
-    # print(guessNumber)
+        print(guessNumber)
             
-
 game(randomWord())
 
 
