@@ -14,10 +14,10 @@ def game(randWord):
     guess = input("Please enter your word: ")
     guessNumber = 0
 
-    while guessNumber < 5:
+    if guessNumber < 5:
         for x in guess:
             if x in randWord:
-                print(f'{green}', x)
+                print(f'{blue}', x)
 
             if x not in randWord:
                 print(f'{red}', x)
